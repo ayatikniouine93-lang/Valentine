@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine</title>
+  <style>
+    body {
+      background-color: #ffe6f0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    h1 {color: #e91e63;}
+    button {
+      font-size: 18px;
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      background-color: #ff66a3;
+      color: white;
+    }
+    button:hover {background-color: #ff3385;}
+    #phone {
+      display: none;
+      margin-top: 20px;
+      font-size: 22px;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Veux-tu me voir ? 💖</h1>
+<button id="ouiBtn">Oui</button>
+<button id="nonBtn">Non</button>
+
+<div id="phone">📞 Mon numéro : 06 26 12 99 00</div>
+
+<script>
+  document.getElementById('ouiBtn').onclick = () => {
+    document.getElementById('phone').style.display = 'block';
+  };
+  document.getElementById('nonBtn').onclick = () => {
+    alert("Dommage ! 😢");
+  };
+</script>
+
+</body>
+</html>
