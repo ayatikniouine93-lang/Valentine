@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine</title>
+  <style>
+    body {
+      background-color: #ffe6f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    h1 {
+      color: #e91e63;
+    }
+    button {
+      font-size: 18px;
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Lina, veux-tu être ma Valentine ? 💕</h1>
+    <button onclick="alert('Ouiii 💖')">Oui</button>
+    <button onmouseover="this.style.position='absolute'; this.style.left=Math.random()*80+'%'; this.style.top=Math.random()*80+'%'">
+      Non
+    </button>
+  </div>
+</body>
+</html>
